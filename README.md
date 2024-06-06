@@ -1,6 +1,7 @@
 # URL Shortening Application
 
 This application is built using AdonisJS, providing functionalities for user registration, login, logout, and link shortening. It also includes authentication and validations using Vine.
+You can test it live using this base url the follow the routes in the doc below https://url-shortening-app-c6h2.onrender.com
 
 ## Table of Contents
 
