@@ -29,7 +29,7 @@ export default class AuthService {
         if (userAlreadyExist) {
           throw new CustomException('User already exist!', 403, {})
         }
-        const user = await User.create(payload)
+        const user = await User.create({ email, password })
         const token = await User.accessTokens.create(user)
 
         resolve({
