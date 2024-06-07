@@ -12,6 +12,9 @@ import { middleware } from './kernel.js'
 const UsersController = () => import('#controllers/users_controller')
 const LinksController = () => import('#controllers/links_controller')
 
+router.get('', ({ response }) => {
+  return response.ok({ message: 'Url Shortening App Is Live' })
+})
 router.get(':url', [LinksController, 'getLink'])
 
 router
